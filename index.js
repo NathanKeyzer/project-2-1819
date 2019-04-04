@@ -10,8 +10,9 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", "views");
 app.get("/", (req, res) => res.send("Hello World!"));
+
 app.get("/werken", (req, res) => {
-  res.render("werken.ejs");
+  res.render("index.ejs");
 });
 
 app.get("/studentenwerk", (req, res) => {

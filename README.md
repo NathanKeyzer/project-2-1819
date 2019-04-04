@@ -2,6 +2,8 @@
 
 ## CMD Amsterdam
 
+![CMD]()
+
 ## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
 
 Het project vindt plaats bij in ons eigen lokaal. Maandagochtend is om 9.30 uur de kickoff (bij de oprachtgever), vrijdag zijn de presentaties van de resultaten (bij de opdrachtgever). In een week bouwt iedere student een eigen prototype ter onderbouwing van aanbevelingen aan de opdrachtgevers (Valtech, Mirabeau & CMD Amsterdam). De aanbevelingen betreffen het verbeteren van toegankelijkheid en performance van de web sites / applicaties. Technieken geleerd bij [Browser Technologies](https://github.com/cmda-minor-web/browser-technologies-1819) en [Performance Matters](https://github.com/cmda-minor-web/performance-matters-1819) worden toegepast bij het bouwen van de de prototypes en et schrijven van de aanbevelingen.
@@ -138,12 +140,14 @@ PWA Optimized
 
 ---
 
-Dit zijn de verbeterpunten vanuit de audit die chrome adviseerd
-
 # Optimalisatie van CMD Amsterdam
 
 ## Audit
 
-Na het runnen van een audit in chrome zijn er een aantal cijfers uitgekomen hoe CMD Amsterdam scoort. ![bla bla](#)
+Na het runnen van een audit zijn dit de resultaten van CMD Amsterdam. ![first-audit](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/first-audit.png?raw=true)
+
+Het meerendeel van deze cijfers zijn vrij slecht waaronder.
+
+Waar voornamelijk veel laadtijd bespaard kan worden is bij het inalden van de afbeeldingen.
 
 ## Prototype
