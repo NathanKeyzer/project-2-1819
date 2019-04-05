@@ -1,27 +1,34 @@
-// console.log("hoi");
-//
-// var CACHE_NAME = "my-site-cache-v1";
-// var urlsToCache = ["/", "/css/main.css", "/js/main.js"];
-//
-// self.addEventListener("install", function(event) {
-//   // Perform install steps
-//   event.waitUntil(
-//     caches.open(CACHE_NAME).then(function(cache) {
-//       console.log("Opened cache");
-//
-//       return cache.addAll(urlsToCache);
-//     })
-//   );
-// });
-//
-// self.addEventListener("fetch", function(event) {
-//   event.respondWith(
-//     caches.match(event.request).then(function(response) {
-//       // Cache hit - return response
-//       if (response) {
-//         return response;
-//       }
-//       return fetch(event.request);
-//     })
-//   );
-// });
+const cacheName = 'core-cache'
+const cacheInstall = [
+  '/',
+  '/offline',
+  '/css/main.css',
+  '/js/main.js'
+]
+
+self.addEventListener('install', (e) => {
+  e.waitUntil(
+    caches
+    .open('core-cache')
+    .then(cache => {
+      return cache.addAll(cacheInstall)
+    })
+    .then(() => {
+      self.skipWaiting()
+    })
+  )
+})
+
+self.addEventListener('activate', (e) => {
+  console.log(`Activate event`);
+})
+
+self.addEventListener('fetch', (e) => {
+  console.log('fetch');
+  e.respondWith(
+    caches
+    .match(e.request)
+    .then(response => (response ? response : fetch(e.request)))
+    .catch(() => caches.match('/offline'))
+  )
+})

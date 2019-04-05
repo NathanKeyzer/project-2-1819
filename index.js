@@ -15,6 +15,10 @@ app.set("views", "views");
 app.get("/", (req, res) => {
   res.render("index.ejs");
 });
+app.get("/offline", (req, res) => {
+  res.render("offline.ejs");
+});
+
 
 app.get("/studentenwerk", (req, res) => {
   const data = fetch(`${baseUrl}/7`)
