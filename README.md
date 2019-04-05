@@ -10,7 +10,7 @@ Deze website wordt beheerd doormiddel van het open source CMS Wordpress.
 
 ---
 
-### Presentatie
+### Briefing
 
 Opdrachtgever: CMD Amsterdam
 
@@ -136,6 +136,24 @@ PWA Optimized
 - Failures: No manifest was fetched, No `<meta name="theme-color">` tag found.
 
 </details>
+
+---
+### STUDENTENWERK
+
+![studentenwerk](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/studentenwerk.png?raw=true)
+
+Ik heb deze pagina uitgekozen om de performance te verbeteren.
+
+![audit_results](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/studentenwerk_audit.png?raw=true)
+
+### Mijn versie
+
+Mijn versie van de pagina.
+
+![remake_studentenwerk](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/studentenwerk_performance.png?raw=true)
+
+Resultaten van deze pagina.
+![last_audit](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/last_audit.png?raw=true)
 
 
 
