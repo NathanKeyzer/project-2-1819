@@ -1,7 +1,8 @@
 const express = require("express");
 const fetch = require("node-fetch");
 const app = express();
-const port = 5000;
+const port =  process.env.PORT || 5000;
+
 const baseUrl = "https://www.cmd-amsterdam.nl/wp-json/wp/v2/pages";
 
 const https = require("https");
@@ -9,9 +10,9 @@ app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 app.set("views", "views");
-app.get("/", (req, res) => res.send("Hello World!"));
 
-app.get("/werken", (req, res) => {
+
+app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 

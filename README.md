@@ -33,14 +33,20 @@ Aanleveren: proof of concept, prototype.
 
 ---
 
-### Audit
+## Audit
 
-Results via chrome and tips.
+Na het runnen van een audit zijn dit de resultaten van CMD Amsterdam. ![first-audit](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/first-audit.png?raw=true)
+
+Het meerendeel van deze cijfers zijn vrij slecht waaronder.
+
+Waar voornamelijk veel laadtijd bespaard kan worden is bij het inalden van de afbeeldingen.
+
+Hieronder vind je de resultaten van de eerste audit. Hier is er per onderwerp een tip gegeven hoe je dit kunt verbeteren.
 
 #### Performance:
 
 <details>
-<summary>Performance</summary>
+<summary>Audit resultaten</summary>
 
 7
 Metrics
@@ -68,8 +74,10 @@ Opportunities
 
 #### Accessibility:
 
+<details>
+<summary>Audit resultaten</summary>
+
 81
-Accessibility
 
 - Elements Have Discernible Names
   These are opportunities to improve the semantics of the controls in your application. this may enhance the experience for user of assistive technology, like screen reader.
@@ -77,28 +85,41 @@ Accessibility
 - Meta Tags Used Properly
   These are opportunities to improve the user experience of your site.
 
+</details>
+
 #### Best Practices:
 
+<details>
+<summary>Audit resultaten</summary>
+
 71
-Best Practices.
 
 - Does not use HTTP/2 for all of its resources.
 - Does not use passive listeners to improve scrolling performance.
 - Links to cross-origin destinations are unsafe.
 - includes front-end Javascript libraries with known security vulnerabilities.
 
+</details>
+
 #### SEO:
 
+<details>
+<summary>Audit resultaten</summary>
+
 91
+
 Content Best Practise
 Format your HTML in a way that enables crawlers to better understand your app's content.
 
 - Document does not have a meta description
   Meta descriptions may be included in search results to concisely summarize page content.
 
+</details>
+
 #### PWA
 
-Progressive Web App.
+<details>
+<summary>Audit resultaten</summary>
 
 Fast and reliable
 
@@ -114,17 +135,7 @@ PWA Optimized
 - Failures: No manifest was fetched.
 - Failures: No manifest was fetched, No `<meta name="theme-color">` tag found.
 
----
-
-# Optimalisatie van CMD Amsterdam
-
-## Audit
-
-Na het runnen van een audit zijn dit de resultaten van CMD Amsterdam. ![first-audit](https://github.com/NathanKeyzer/project-2-1819/blob/master/public/images/first-audit.png?raw=true)
-
-Het meerendeel van deze cijfers zijn vrij slecht waaronder.
-
-Waar voornamelijk veel laadtijd bespaard kan worden is bij het inalden van de afbeeldingen.
+## </details>
 
 ## Prototype
 
